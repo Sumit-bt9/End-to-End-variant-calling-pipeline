@@ -1,15 +1,20 @@
 # Variant Calling Pipeline
 
-Maine is project mein GATK Best Practices follow karke 
-NA12878 WES data pe germline variant calling ki.
+This project implements a germline variant calling pipeline 
+following GATK Best Practices on NA12878 (HG001) WES data 
+from NCBI SRA (SRR1518253).
 
 ## Tools Used
 - FastQC, Trimmomatic, BWA-MEM
 - GATK HaplotypeCaller
-- ANNOVAR
-- ReportLab (PDF report)
+- ANNOVAR (ClinVar, gnomAD, dbSNP)
+- Python + ReportLab (Clinical PDF Report)
 
 ## Results
-- 62,817 variants detected
-- 47 Pathogenic/Likely Pathogenic
-- BRCA1, TP53, MLH1 mein key variants mile
+- 62,817 high-confidence variants detected
+- 47 Pathogenic / Likely Pathogenic variants identified
+- Key genes: BRCA1, TP53, MLH1, BRCA2, CFTR, PTEN
+
+## Report
+Full analysis and results are documented in the project 
+report (PDF) included in this repository.
